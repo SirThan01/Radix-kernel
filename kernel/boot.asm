@@ -1,7 +1,7 @@
 bits 32
 section .text
 global start
-extern kernel_main
+extern point_open
 
 start:
     mov esp, stack_top
