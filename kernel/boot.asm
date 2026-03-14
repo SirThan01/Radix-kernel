@@ -5,7 +5,7 @@ extern kernel_main
 
 start:
     mov esp, stack_top
-    call kernel_main
+    call point_open
     hlt
 
 section .bss
