@@ -2,7 +2,7 @@
 //15.03.2026
 #include "typec.h"
 void point_open() {
-    chr* vm = (chr*) 0xb8000;
+    cht* vm = (chr*)0xb8000;
     csnchr* hfk = "Hello from kernel!";
     int i = 0;
     while (msg[i] != '\0') {
