@@ -1,6 +1,6 @@
-global key_lshift
+global key_rshift
 section .text
 bits 32
-key_lshift:
+key_rshift:
     mov eax, 0x2A
     ret
