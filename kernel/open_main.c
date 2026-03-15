@@ -8,7 +8,7 @@ void point_open() {
     while (hfk[i] != '\0') {
         vm[i * 2] = hfk[i];       
         vm[i * 2 + 1] = 0x02;       
-        p++;
+        i++;
     }
     while(1) {
         __asm__("hlt");
