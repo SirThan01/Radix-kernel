@@ -1,6 +1,7 @@
 #ifndef TYPEC_H
 #define TYPEC_H
 #include <stdint.h>
+typedef char chr;
 typedef unsigned int   uns_int;
 typedef unsigned char  uns_chr;
 typedef unsigned short uns_shrt;
