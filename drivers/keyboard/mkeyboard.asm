@@ -108,7 +108,7 @@ je .p
 cmp al, 0x1C
 je .enter
 cmp al, 0x1D
-je .cntr
+je .ctrl
 cmp al, 0x1E
 je .a
 cmp al, 0x1F
@@ -185,42 +185,41 @@ jmp .end
 .0: call key_0; jmp .end
 .backspace: call key_esc; jmp .end
 .tab: call key_esc; jmp .end
-.q: call key_esc; jmp .end
-.w: call key_esc; jmp .end
-.e: call key_esc; jmp .end
-.r: call key_esc; jmp .end
-.t: call key_esc; jmp .end
-.y: call key_esc; jmp .end
-.u: call key_esc; jmp .end
-.i: call key_esc; jmp .end
-.o: call key_esc; jmp .end
-.p: call key_esc; jmp .end
-.enter: call key_esc; jmp .end
-.ctrl: call key_esc; jmp .end
-.a: call key_esc; jmp .end
-.s: call key_esc; jmp .end
-.d: call key_esc; jmp .end
-.f: call key_esc; jmp .end
-.g: call key_esc; jmp .end
-.h: call key_esc; jmp .end
-.j: call key_esc; jmp .end
-.k: call key_esc; jmp .end
-.l: call key_esc; jmp .end
+.q: call key_q; jmp .end
+.w: call key_w; jmp .end
+.e: call key_e; jmp .end
+.r: call key_r; jmp .end
+.t: call key_t; jmp .end
+.y: call key_y; jmp .end
+.u: call key_u; jmp .end
+.i: call key_i; jmp .end
+.o: call key_o; jmp .end
+.p: call key_p; jmp .end
+.enter: call key_enter; jmp .end
+.ctrl: call key_ctrl; jmp .end
+.a: call key_a; jmp .end
+.s: call key_a; jmp .end
+.d: call key_d; jmp .end
+.f: call key_f; jmp .end
+.g: call key_g; jmp .end
+.h: call key_h; jmp .end
+.j: call key_j; jmp .end
+.k: call key_k; jmp .end
+.l: call key_l; jmp .end
 .lshift: call key_shift; jmp .end
-.z: call key_esc; jmp .end
-.x: call key_esc; jmp .end
-.c: call key_esc; jmp .end
-.v: call key_esc; jmp .end
-.b: call key_esc; jmp .end
-.n: call key_esc; jmp .end
-.m: call key_esc; jmp .end
+.z: call key_z; jmp .end
+.x: call key_x; jmp .end
+.c: call key_c; jmp .end
+.v: call key_v; jmp .end
+.b: call key_b; jmp .end
+.n: call key_n; jmp .end
+.m: call key_m; jmp .end
 .rshift: call key_esc; jmp .end
 .alt: call key_esc; jmp .end
 .space: call key_esc; jmp .end
 .capslock: call key_esc; jmp .end
 .f1: call key_f1; jmp .end
 .f2: call key_f2; jmp .end
-.f3: call key_f3; jmp .end
 .f3: call key_f3; jmp .end
 .f4: call key_f4; jmp .end
 .f5: call key_f5; jmp .end
