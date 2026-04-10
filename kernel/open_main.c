@@ -1,9 +1,9 @@
 //copyright ©
 //15.03.2026
-#include "typec.h"
+#include "usr/typec.h"
 void point_open() {
-    cht* vm = (chr*)0xb8000;
-    csnchr* hfk = "Hello from kernel!";
+    chr* vm = (chr*)0xb8000;
+    cstchr* hfk = "Hello from kernel!";
     int i = 0;
     while (hfk[i] != '\0') {
         vm[i * 2] = hfk[i];       
