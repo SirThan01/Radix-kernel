@@ -10,7 +10,7 @@ extern key_h,
 extern key_i,
 extern key_j,
 extern key_k,
-extern key_l
+extern key_l,
 extern key_m,
 extern key_n,
 extern key_o,
@@ -199,7 +199,7 @@ jmp .end
 .enter: call key_enter; jmp .end
 .ctrl: call key_ctrl; jmp .end
 .a: call key_a; jmp .end
-.s: call key_a; jmp .end
+.s: call key_s; jmp .end
 .d: call key_d; jmp .end
 .f: call key_f; jmp .end
 .g: call key_g; jmp .end
@@ -207,7 +207,7 @@ jmp .end
 .j: call key_j; jmp .end
 .k: call key_k; jmp .end
 .l: call key_l; jmp .end
-.lshift: call key_shift; jmp .end
+.lshift: call key_lshift; jmp .end
 .z: call key_z; jmp .end
 .x: call key_x; jmp .end
 .c: call key_c; jmp .end
@@ -228,7 +228,7 @@ jmp .end
 .f7: call key_f7; jmp .end
 .f8: call key_f8; jmp .end
 .f9: call key_f9; jmp .end
-.f10: call key_f10
+.f10: call key_f10 jmp .end
 .end:
        mov al, 0x20
        out 0x20, al
