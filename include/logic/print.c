@@ -16,7 +16,7 @@ static void putchar(chr c) {
         x++;
         if(x >= 80) {
             y = 0;
-            y++
+            y++;
         }
     }
     if (y <= 25) {
